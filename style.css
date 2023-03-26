@@ -1,0 +1,174 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+
+body{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    font-family: 'Libre Franklin', sans-serif;
+    margin-top: 50px;
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 550px;
+    height: 650px;
+}
+
+.wrapper .info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 30%;
+}
+
+.wrapper .info .jbl{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper .info .jbl h2{
+    font-weight: 600;
+    color: hsl(0, 0%, 59%);
+}
+
+.wrapper .info .jbl p{
+    font-weight: 300;
+    color: hsl(209, 33%, 12%);
+}
+
+span{
+    font-weight: 700;
+    color: hsl(209, 33%, 12%);
+}
+
+.wrapper .info form input, button{
+    border-radius: 100px;
+    border: 1px solid hsl(0, 0%, 59%);
+    padding: 15px 60px;
+}
+
+button{
+    background-color:hsl(223, 87%, 63%);
+    color: white;
+    box-shadow: 1px 3px 4px 1px hsl(223, 100%, 88%);
+}
+
+.wrapper .pic .details{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.wrapper .pic .details .icons{
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.wrapper .pic .details .icons img{
+    width: 30px;
+    height: 30px;
+    border-radius: 7px;
+}
+
+.wrapper .pic .details p{
+    color: hsl(0, 0%, 59%);
+    font-weight: 300;
+}
+
+.wrapper .pic{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%
+}
+
+.wrapper .pic .chart img{
+    width: 100%;
+    height: 100%;
+}
+
+@media(max-width: 375px){
+    body{
+        background-color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+        height: 667px;
+        font-family: 'Libre Franklin', sans-serif;
+        margin-top: 150px;
+    }
+
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 320px;
+        height: 550px;
+    }
+
+    .wrapper .info{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: 30%;
+    }
+    
+    .wrapper .info .jbl{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .wrapper .pic{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 70%
+    }
+    
+    .wrapper .pic .chart img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    form button, input{
+        margin-top: 10px;
+        color: hsl(223, 100%, 88%);
+    }
+    
+    form input{
+        color: hsl(223, 100%, 88%);
+    }
+}
