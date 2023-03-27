@@ -106,6 +106,7 @@ button{
     height: 100%;
 }
 
+/* Mobile design */
 @media(max-width: 375px){
     body{
         background-color: white;
