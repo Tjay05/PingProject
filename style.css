@@ -160,7 +160,11 @@ button{
         justify-content: center;
         align-items: center;
         width: 320px;
-        height: 550px;
+        height: 650px;
+    }
+
+    .jbl h2{
+        text-align: center;
     }
 
     .wrapper .info{
@@ -206,5 +210,9 @@ button{
     
     form input{
         color: hsl(223, 100%, 88%);
+    }
+
+    .details p{
+        text-align: center;
     }
 }
