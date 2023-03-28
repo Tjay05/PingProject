@@ -141,7 +141,7 @@ button{
 }
 
 /* Mobile design */
-@media(max-width: 375px){
+@media(max-width: 400px){
     body{
         background-color: white;
         display: flex;
