@@ -1,81 +1,161 @@
-*{
-    box-sizing: border-box;
-    padding: 0%;
-    margin: 0%;
+/* Reset */
+*,
+*::before,
+*::after, p, h1,h2, ul, li {
+	box-sizing: border-box;
+	padding: 0%;
+	margin: 0%;
 }
 
+address {
+	font-style: normal;
+}
+
+/* Base Styles */
 body{
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    font-family: 'Libre Franklin', sans-serif;
-    margin-top: 50px;
-    font-size: 20px;
+	font-family: 'Libre Franklin', sans-serif;
+	background-color: white;
+	font-size: 20px;
+	text-align: center;
 }
 
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    width: 550px;
-    height: 650px;
+img {
+	display: inline-block;
+	width: 100%;
 }
 
-.wrapper .info{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    height: 30%;
+a {
+	text-decoration: none;
+	color: inherit;
 }
 
-.wrapper .info .jbl{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+li {
+	text-decoration: none;
+	list-style: none;
 }
 
-.wrapper .info .jbl h2{
-    font-weight: 600;
-    color: hsl(0, 0%, 59%);
+/* Utility Styles */
+.container {
+	width: 80%;
+	margin-inline: auto;
+	margin-block: 2rem;
+	max-width: 720px;
 }
 
-.wrapper .info .jbl p{
-    font-weight: 300;
-    color: hsl(209, 33%, 12%);
+/* Mobile Styles */
+header img {
+	width: 20%;
 }
 
-span{
-    font-weight: 700;
-    color: hsl(209, 33%, 12%);
+/* Main */
+main.wrapper {
+	margin-block: 1.5rem;
 }
 
-.wrapper .info form input, button{
-    border-radius: 100px;
-    border: 1px solid hsl(0, 0%, 59%);
-    padding: 15px 60px;
+main h1 {
+	font-weight: 300;
+	color: hsl(0, 0%, 59%);
+	font-size: 1.6rem;
+	margin-block-end: .7rem;
 }
 
-button{
-    background-color:hsl(223, 87%, 63%);
-    color: white;
-    box-shadow: 1px 3px 4px 1px hsl(223, 100%, 88%);
-    cursor: pointer;
+main h1 span {
+	color: hsl(209, 33%, 12%);
+	font-weight: 700;
 }
 
-.wrapper .pic .details{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
+main p {
+	font-weight: 300;
+	color: hsl(209, 33%, 12%);
+	font-size: 20px;
 }
 
+main form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-block: 2rem;
+	gap: 0.5rem;
+}
+
+main form input {
+	width: 100%;
+	border-radius: 39.38px;
+	color: hsl(223, 100%, 88%);
+	border: 1px solid hsl(223, 100%, 88%);
+	padding: .7rem 2rem;
+	font-family: inherit;
+}
+
+input::placeholder {
+	color: hsl(223, 100%, 88%);
+}
+
+/* Focus State */
+input:focus {
+	border: 1px solid hsl(223, 100%, 88%);
+	outline: inherit;
+}
+
+main form button {
+	outline: none;
+	font-family: inherit;
+	width: 100%;
+	border-radius: 39.38px;
+	border: none;
+	padding: .7rem 2rem;
+	background-color:hsl(223, 87%, 63%);
+	color: white;
+	box-shadow: 1px 3px 4px 1px hsl(223, 100%, 88%);
+	cursor: pointer;
+}
+
+main img.illustration {
+	margin-block: 2rem;
+}
+
+/* Footer Styles */
+footer {
+	margin-block-start: 2rem;
+	font-family: inherit;
+}
+
+footer ul {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: hsl(223, 87%, 63%);
+	gap: 1.5rem;
+	max-width: 240px;
+	margin-inline: auto;
+	margin-block: 2rem;
+}
+
+footer ul li a span {
+	background-color: white;
+	border-radius: 50%;
+	border: 1px solid hsla(223, 100%, 88%, .5);
+	padding: .5rem .5rem;
+}
+
+footer p {
+	font-size: 1rem;
+	color: hsl(0, 0%, 59%);
+	font-weight: 300;
+	margin-block: 4rem 2rem;
+}
+
+footer address.attribution { 
+	font-size: 11px; 
+	color: black;
+	text-align: center; 
+}
+
+.attribution a { 
+	color: hsl(228, 45%, 44%); 
+}
+
+/*
 .wrapper .pic .details .icons{
     display: flex;
     align-items: center;
@@ -140,7 +220,17 @@ button{
     height: 100%;
 }
 
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}*/
+
 /* Mobile design */
+/*
 @media(max-width: 400px){
     body{
         background-color: white;
@@ -222,4 +312,4 @@ button{
     .details p{
         text-align: center;
     }
-}
+} */
