@@ -2,63 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
   <title>Frontend Mentor | Ping coming soon page</title>
+  <!-- Google font -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libfs/font-awesome/6.2.1/css/all.min.css"/>
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
-<body>
-  <div class="wrapper">
-    <div class="info">
-      <img src="images/logo.svg" alt=""><br>
-      <div class="jbl">
-        <h2>We are launching <span>soon!</span></h2><br>
-        <p>Subscribe and get notified</p>
-      </div>
-      <form>
-        <input type="email" required placeholder="Your email address...">
-        <button>Notify Me</button>
-      </form>
-      
-    </div>
-    <div class="pic">
-      <div class="chart">
-        <img src="images/illustration-dashboard.png" alt="">
-      </div>
-      <div class="details">
-        <div class="icons">
-          <a class="socials__icon-container" href="https://www.facebook.com/" target="_blank">
-            <span class="socials__icon fab fa-facebook-f"></span>
-        </a>
-        <a class="socials__icon-container" href="https://twitter.com/" target="_blank">
-            <span class="socials__icon fab fa-twitter"></span>
-        </a>
-        <a class="socials__icon-container" href="https://www.instagram.com/" target="_blank">
-            <span class="socials__icon fab fa-instagram"></span>
-        </a>
-        </div>
-        <p> &copy; Copyright Ping. All rights reserved.</p>
-      </div>
-    </div>
-  </div>
-  
+<body class="container">
+  <header>
+    <img src="images/logo.svg" alt="">
+  </header>
+  <main class="wrapper">
+    <h1>We are launching <span>soon!</span></h1>
+    <p>Subscribe and get notified</p>
+    <form>
+      <input type="email" required placeholder="Your email address">
+      <button type="submit">Notify Me</button>
+    </form>
+    <img class="illustration" src="images/illustration-dashboard.png" alt="Illustration-dashboard">
+  </main>
   <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Olatayo Tijesu</a>.
-    </p>
+    <ul>
+      <li><a href="www.facebook.com" target="_blank"><span class="socials__icon fab fa-facebook-f"></span></a></li>
+      <li><a href="www.twitter.com" target="_blank"><span class="socials__icon fab fa-twitter"></span></a></li>
+      <li><a href="www.instagram.com" target="_blank"><span class="socials__icon fab fa-instagram"></span></a></li>
+    </ul>
+    <p class="copyright"> &copy; Copyright Ping. All rights reserved.</p>
+    <address class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/Tjay05" target="_blank">Olatayo Tijesu</a>.
+    </address>
   </footer>
 </body>
 </html>
