@@ -39,7 +39,7 @@ li {
 	width: 80%;
 	margin-inline: auto;
 	margin-block: 2rem;
-	max-width: 720px;
+	max-width: 600px;
 }
 
 /* Mobile Styles */
@@ -155,69 +155,30 @@ footer address.attribution {
 	color: hsl(228, 45%, 44%); 
 }
 
+/* Desktop Styles */
+@media(min-width: 768px) {
+	main form {
+		width: 100%;
+		flex-direction: row;
+		gap: 2%;
+	}
+
+	main form input {
+		width: 60%;
+	}
+
+	main form button {
+		width: 38%;
+	}
+
+	/* Hover Styles */
+	footer ul li a span:hover {
+		background-color: hsl(223, 87%, 63%);
+		border: 1px solid hsl(223, 87%, 63%);
+		color: white;
+	}
+}
 /*
-.wrapper .pic .details .icons{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto 1.5rem;
-    width: 150px;
-}
-
-.wrapper .pic .details .icons span{
-    background-color: white;
-    color: hsl(223, 87%, 63%);
-    border-radius: 50%;
-    border: hsl(0, 0%, 59%)  1px;
-    padding: 5px;
-}
-
-.wrapper .pic .details .icons span:hover{
-    background-color: hsl(223, 87%, 63%);
-    color: white;
-    padding: 8px;
-}
-
-.socials__icon-container {
-    position: relative;
-    display: block;
-    width: 2rem;
-    height: 2rem;
-    border-radius: 50%;
-}
-
-.socials__icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    text-decoration: none;
-    transform: translate(-50%, -50%);
-}
-
-
-.wrapper .pic .details .icons img{
-    width: 30px;
-    height: 30px;
-    border-radius: 7px;
-}
-
-.wrapper .pic .details p{
-    color: hsl(0, 0%, 59%);
-    font-weight: 300;
-}
-
-.wrapper .pic{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 70%
-}
-
-.wrapper .pic .chart img{
-    width: 100%;
-    height: 100%;
 }
 
 .attribution { 
